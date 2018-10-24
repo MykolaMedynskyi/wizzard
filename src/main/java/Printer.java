@@ -3,16 +3,21 @@ public class Printer {
     public Printer() {
     }
 
-    public void yourNum(int n){
-        System.out.println("Is your number " + n + "?");
+    public String yourNum(int n){
+        if (n<=0) return "mistake was made...";
+        return "Is your number " + n + "?";
     }
 
-    public void cheater(){
-        System.out.println("You are cheater");
+    public String cheater(){
+        return "You are cheater";
     }
 
-    public void win(){
-        System.out.println("I am the WINNER");
+    public String win(){
+        return "I am the WINNER";
+    }
+
+    public String wrong(){
+        return "Wrong typing...";
     }
 
 }
