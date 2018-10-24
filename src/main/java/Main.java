@@ -4,8 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String reader;
-
         WizardCalc wizardCalc = new WizardCalc();
         Printer printer = new Printer();
         Scanner sc = new Scanner(System.in);
@@ -14,6 +12,8 @@ public class Main {
         System.out.println("Type 'm' if your number is more");
         System.out.println("Type 'l' if your number is less");
         System.out.println("Type 'y' if it is your number\n");
+
+        String reader;
 
         while(true) {
             System.out.println(printer.yourNum(wizardCalc.getCurrNum()));
